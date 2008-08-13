@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <groupId>com.google</groupId>
+  <artifactId>google</artifactId>
+  <version>1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20080813.210239</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20080813210245</lastUpdated>
+  </versioning>
+</metadata>
