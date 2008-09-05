@@ -1,0 +1,25 @@
+#summary Instructions for referencing these repositories from your project.
+#labels Featured
+
+To reference the release repository from your Maven project, add the following element to the `<repositories>` section of either your `pom.xml` or `settings.xml`:
+
+{{{
+<repository>
+  <id>google-maven-repository</id>
+  <name>Google Maven Repository</name>
+  <url>http://google-maven-repository.googlecode.com/svn/repository/</url>
+</repository>
+}}}
+
+Similarly, for the snapshot repository:
+
+{{{
+<repository>
+  <id>google-maven-snapshot-repository</id>
+  <name>Google Maven Snapshot Repository</name>
+  <url>http://google-maven-repository.googlecode.com/svn/snapshot-repository/</url>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+}}}
