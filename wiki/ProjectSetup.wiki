@@ -1,7 +1,7 @@
 #summary Instructions for referencing these repositories from your project.
 #labels Featured
 
-To reference the release repository from your Maven project, add the following element to the `<repositories>` section of either your `pom.xml` or `settings.xml`:
+It is generally not necessary to reference the release repository directly because it is mirrored with the central repository.  However, you can still reference the release repository directly from your Maven project if you would like.  Simply add the following element to the `<repositories>` section of either your `pom.xml` or `settings.xml`.
 
 {{{
 <repository>
@@ -11,7 +11,7 @@ To reference the release repository from your Maven project, add the following e
 </repository>
 }}}
 
-Similarly, for the snapshot repository:
+The snapshot repository _is not_ mirrored with the central repository.  Add the following snippet to reference that repository.
 
 {{{
 <repository>
