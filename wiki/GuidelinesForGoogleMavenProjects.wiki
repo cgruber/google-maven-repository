@@ -7,7 +7,7 @@
 
 = Approval Needed =
 
-  * If you choose not to inherit from the com.google:google POM
+  * If you do not inherit from the com.google:google POM
      {{{
   <parent>
     <groupId>com.google</groupId>
