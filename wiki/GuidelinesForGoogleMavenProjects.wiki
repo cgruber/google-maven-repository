@@ -8,6 +8,13 @@
 = Approval Needed =
 
   * If you choose not to inherit from the com.google:google POM
+     {{{
+  <parent>
+    <groupId>com.google</groupId>
+    <artifactId>google</artifactId>
+    <version>1</version>
+  </parent>
+     }}}
 
 = Suggestions =
 
