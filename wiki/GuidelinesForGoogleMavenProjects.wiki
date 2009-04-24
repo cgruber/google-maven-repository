@@ -1,0 +1,14 @@
+#summary This document contains guidlines for Google projects looking to be added to the repository
+
+= Absolute, Unwavering Requirements =
+
+ * Your project *must* have the [http://code.google.com/hosting/search?q=label:Google google label]
+ * Your project's POM needs to be reviewed by a Google Maven Repository project owner
+
+= Approval Needed =
+
+  * If you choose not to inherit from the com.google:google POM
+
+= Suggestions =
+
+ * Life is easier if your project builds with maven, but it is not required
