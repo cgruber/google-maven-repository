@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.google.visualization</groupId>
+  <artifactId>visualization-datasource</artifactId>
+  <version>1.0.1</version>
+  <versioning>
+    <versions>
+      <version>1.0.1</version>
+    </versions>
+    <lastUpdated>20090709075033</lastUpdated>
+  </versioning>
+</metadata>
