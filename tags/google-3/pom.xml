@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.google</groupId>
+    <artifactId>google</artifactId>
+    <version>3</version>
+    <name>Google</name>
+    <description>Internally developed code released as open source.</description>
+    <packaging>pom</packaging>
+    <organization>
+        <name>Google</name>
+        <url>http://www.google.com/</url>
+    </organization>
+    <url>http://code.google.com/</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <distributionManagement>
+        <repository>
+            <id>google-releases</id>
+            <name>Google Maven Repository</name>
+            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>google-snapshots</id>
+            <name>Google Maven Snapshot Repository</name>
+            <url>http://oss.sonatype.org/content/repositories/google-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <scm>
+        <connection>scm:svn:http://google-maven-repository.googlecode.com/svn/tags/google-3</connection>
+        <developerConnection>scm:svn:https://google-maven-repository.googlecode.com/svn/tags/google-3</developerConnection>
+        <url>http://code.google.com/p/google-maven-repository/source/browse/tags/google-3</url>
+    </scm>
+</project>
