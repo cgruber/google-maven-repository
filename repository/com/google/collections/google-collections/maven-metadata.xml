@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><metadata>
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
   <groupId>com.google.collections</groupId>
   <artifactId>google-collections</artifactId>
   <version>0.8</version>
@@ -9,7 +10,8 @@
       <version>1.0-rc1</version>
       <version>1.0-rc2</version>
       <version>1.0-rc3</version>
+      <version>1.0-rc4</version>
     </versions>
-    <lastUpdated>20091019202423</lastUpdated>
+    <lastUpdated>20091111004008</lastUpdated>
   </versioning>
 </metadata>
