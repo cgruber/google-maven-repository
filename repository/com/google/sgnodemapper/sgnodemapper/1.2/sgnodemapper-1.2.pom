@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.google</groupId>
+    <artifactId>google</artifactId>
+    <version>1</version>
+  </parent>
+  <name>Social Graph NodeMapper</name>
+  <description>The Social Graph Node Mapper is a community project to build a portable library to map social networking sites' URLs to and from a new canonical form (sgn:// URLs).</description>
+  <groupId>com.google.sgnodemapper</groupId>
+  <artifactId>sgnodemapper</artifactId>
+  <version>1.2</version>
+  <url>http://code.google.com/p/google-sgnodemapper/</url>
+
+  <scm>
+    <connection>scm:svn:https://google-sgnodemapper.googlecode.com/svn/trunk</connection>
+    <developerConnection>scm:svn:https://google-sgnodemapper.googlecode.com/svn/trunk</developerConnection>
+    <url>https://google-sgnodemapper.googlecode.com/svn/trunk</url>
+  </scm>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${basedir}/../../</directory>
+        <includes>
+          <include>*.js</include>
+          <include>*.dat</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.1</version>
+        <executions>
+          <execution>
+            <phase>initialize</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <executable>make</executable>
+          <workingDirectory>${basedir}/../../</workingDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin> 
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <tagBase>https://google-sgnodemapper.googlecode.com/svn/tags/</tagBase>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.4</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>rhino</groupId>
+      <artifactId>js</artifactId>
+      <version>1.7R1</version>
+    </dependency>
+  </dependencies>
+</project>
