@@ -1,23 +1,15 @@
 #summary Instructions for referencing these repositories from your project.
 #labels Featured
 
-It is generally not necessary to reference the release repository directly because it is mirrored with the central repository.  However, you can still reference the release repository directly from your Maven project if you would like.  Simply add the following element to the `<repositories>` section of either your `pom.xml` or `settings.xml`.
+Released versions of Google maven projects are now available in the [http://repo1.maven.org/maven2/ central maven repository] so it is not necessary to reference another repository directly.
 
-{{{
-<repository>
-  <id>google-maven-repository</id>
-  <name>Google Maven Repository</name>
-  <url>http://google-maven-repository.googlecode.com/svn/repository/</url>
-</repository>
-}}}
-
-The snapshot repository _is not_ mirrored with the central repository.  Add the following snippet to reference that repository.
+SNAPSHOT versions of Google maven projects may be obtained from Google's snapshot repository. Add the following snippet to your pom.xml to reference that repository.
 
 {{{
 <repository>
   <id>google-maven-snapshot-repository</id>
   <name>Google Maven Snapshot Repository</name>
-  <url>http://google-maven-repository.googlecode.com/svn/snapshot-repository/</url>
+  <url>https://oss.sonatype.org/content/repositories/google-snapshots/</url>
   <snapshots>
     <enabled>true</enabled>
   </snapshots>
