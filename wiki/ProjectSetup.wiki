@@ -1,7 +1,7 @@
 #summary Instructions for referencing these repositories from your project.
 #labels Featured
 
-Released versions of Google maven projects are now available in the [http://repo1.maven.org/maven2/ central maven repository] so it is not necessary to reference another repository directly.
+Released versions of Google maven projects are now available in the [http://repo1.maven.org/maven2/ central maven repository] so it is not necessary to reference a repository directly in your pom.xml.
 
 SNAPSHOT versions of Google maven projects may be obtained from Google's snapshot repository. Add the following snippet to your pom.xml to reference that repository.
 
