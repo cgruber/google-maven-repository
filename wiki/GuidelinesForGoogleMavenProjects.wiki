@@ -1,4 +1,4 @@
-#summary This document contains guidlines for Google projects looking to be added to the repository
+#summary This document contains guidelines for Google maven projects looking to be added to Maven Central
 
 Google maven projects are now deployed to [http://repo1.maven.org/maven2/ Maven Central], run by Sonatype (see [http://www.sonatype.com/people/2010/04/uploading-artifacts-to-the-central-maven-repository-diy/ the Sonatype blog] for a good overview). You can search the Central repo at http://oss.sonatype.org/
 
