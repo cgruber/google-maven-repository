@@ -3,4 +3,4 @@
 
 =Where is my favorite Google project?=
 
-While this repository aims to house all Google Open Source projects, it is entirely infeasible for one project to manage the releases of all others.  So, if you'd like to see a project in this repository, please file an issue with that project and reference this one.  We'll do our best to work with project owners to get their artifacts in here.
+All Google Open Source projects are encouraged to publish to the central maven repository (see [GuidelinesForGoogleMavenProjects]). If your favorite Google project is not available in the central repo, please file an issue with that project.
